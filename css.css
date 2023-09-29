@@ -1,0 +1,179 @@
+
+*
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+  background-color: #262626;
+}
+
+
+
+
+
+
+.contendorpadre{
+   display: flex;
+   flex-wrap: wrap;
+   
+   
+    width: 100%;
+    height: 700px;
+
+
+
+}
+
+
+
+.contendorcanvas{
+
+  flex: 1 0 320px ;
+
+
+
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+#canvas{
+ z-index: -1;
+  border-radius: 25px;
+  background-color: rgb(148, 193, 103);
+  border:  solid 5px;
+  border-radius: 106px 106px 106px 106px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+
+   width: 500px;
+   height: 500px;
+
+
+
+}
+
+
+
+.infromacion_perfil{
+
+
+flex: 1 0 320px ;
+     display: flex;
+     flex-direction: column;
+
+     justify-content: center;
+
+
+
+    & h1{
+        text-justify: distribute-all-lines;
+        text-align: center;
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: linear-gradient(#262626,#eaeaea,#262626);
+        -webkit-background-clip: text;
+        color: transparent;
+
+
+
+        
+    }
+    
+   & p {
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+   }
+      
+}
+
+
+
+
+
+
+
+
+/* botones animados */
+
+
+
+
+.botonera{
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    justify-content:space-around;
+}
+
+
+
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color:rgb(148, 193, 103);
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
