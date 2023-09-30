@@ -2,36 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
 
+     
+
+
+
+        <nav class="navbar">
+            <div class="logo">Mi Sitio Web</div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+ 
+
+
+
+
+
+
     <header class="contendorpadre">
+    
+
         <div class="infromacion_perfil" >
-           <h1>Desarrollador Full Stack Junior - Franco Porres</h1> 
+           <h1>Desarrollador Full Stack Junior  Franco Porres</h1> 
            <p>Me complace presentarme como un apasionado desarrollador Full Stack Junior con experiencia en tecnologías como Java y React. A pesar de ser relativamente nuevo en la industria, estoy ansioso por compartir mi viaje y mi compromiso con el desarrollo de software.</p>
           
-            <section class="botonera"> 
-                <button data-text="Awesome" class="button">
-                    <span class="actual-text">&nbsp;INICIO&nbsp;</span>
-                    <span class="hover-text" aria-hidden="true">&nbsp;INICIO&nbsp;</span>
-                </button>
-                <button data-text="Awesome" class="button">
-                    <span class="actual-text">&nbsp;PORFOLIO&nbsp;</span>
-                    <span class="hover-text" aria-hidden="true">&nbsp;PORFOLIA&nbsp;</span>
-                </button>
-                <button type="enviar" data-text="Awesome" class="button">
-                    <span class="actual-text">&nbsp;CONTACTO&nbsp;</span>
-                    <span class="hover-text" aria-hidden="true">&nbsp;CONTACTO&nbsp;</span>
-                </button>
-                <button type="enviar" data-text="Awesome" class="button">
-                    <span class="actual-text">&nbsp;Certificados&nbsp;</span>
-                    <span class="hover-text" aria-hidden="true">&nbsp;Certificados&nbsp;</span>
-                </button>
-             
-            </section>
+         
             <hr>
                 
         </div>
@@ -44,6 +54,30 @@
 </div>
     
     </header>
-    <script  src="./codigos/particulas1.js" ></script>
+
+
+
+    <section class="wrapper">
+      
+    </section>
+
+
+
+
+
+
+  <script>
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+        console.log("listo")
+    });
+  </script>
+
+
+
+
+   <script  src="./codigos/particulas1.js" ></script>
+
 </body>
 </html>

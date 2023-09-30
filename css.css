@@ -1,4 +1,8 @@
 
+
+
+
+
 *
 {
 
@@ -18,11 +22,10 @@ body{
 
 .contendorpadre{
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: wrap-reverse;
    
    
     width: 100%;
-    height: 700px;
 
 
 
@@ -32,28 +35,30 @@ body{
 
 .contendorcanvas{
 
-  flex: 1 0 320px ;
+  flex: 1 0 500px ;
 
-
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
 
   width: 50%;
-  height: 100%;
+  height: 500px;
   position: relative;
-  overflow: hidden;
+
 
 }
 
 
 #canvas{
  z-index: -1;
-  border-radius: 25px;
-  background-color: rgb(148, 193, 103);
-  border:  solid 5px;
-  border-radius: 106px 106px 106px 106px;
+
+
+  border-radius: 100%;
+  border: solid 10px rgb(26, 26, 26);
+ background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+
   font-size: 18px;
 
    width: 500px;
@@ -63,16 +68,104 @@ body{
 
 }
 
+.fa-bars{
+  font-size: 50px;
+
+  color: aliceblue;
+}
+
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+border-bottom: solid #eaeaea 5px;
+min-width: 500px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media (max-width: 500px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+  
+      text-align: left;
+      position: absolute;
+      background-color: #333;
+      top: 60px;
+      left: 0;
+      z-index: 1;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: flex;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 .infromacion_perfil{
 
 
-flex: 1 0 320px ;
+flex: 1 0 500px ;
      display: flex;
      flex-direction: column;
-
      justify-content: center;
+
+
+
 
 
 
@@ -87,6 +180,7 @@ flex: 1 0 320px ;
         background: linear-gradient(#262626,#eaeaea,#262626);
         -webkit-background-clip: text;
         color: transparent;
+     
 
 
 
@@ -117,11 +211,10 @@ flex: 1 0 320px ;
 
 
 .botonera{
-
-
+   padding: 20px;
+    background-color: aqua;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -174,6 +267,25 @@ flex: 1 0 320px ;
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
